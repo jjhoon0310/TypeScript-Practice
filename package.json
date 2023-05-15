@@ -1,0 +1,19 @@
+{
+    "name": "practice",
+    "version": "1.0.0",
+    "description": "This repository is for Typescript self-practice",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc",
+        "dev": "nodemon --exec ts-node 1.array.ts",
+        "start": "node build/index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "nodemon": "^2.0.22",
+        "ts-node": "^10.9.1",
+        "typescript": "^5.0.4"
+    }
+}
