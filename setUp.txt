@@ -1,0 +1,27 @@
+npm init -y
+npm i -D typescript
+
+Create file: tsconfig.json 
+    {
+        "include": ["src"],
+        "compilerOptions": {
+            "outDir": "build",
+            "target": "ES6",
+            "module": "CommonJS",
+            "lib": ["ES6", "DOM"],
+            "strict": true,
+            "allowJs": true
+        }
+    }
+
+Create folder: src
+
+Edit file: package.json
+    "scripts": {
+        "build": "tsc",
+        "dev": "nodemon --exec ts-node src/index.ts",
+        "start": "node build/index.js"
+    },
+
+npm i -D ts-node
+npm i nodemon
